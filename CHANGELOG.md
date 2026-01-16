@@ -7,11 +7,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
-## [v0.12.0] - 2022-08-18
-
-- Added support for type string and []string in bytearray store: https://github.com/fraugster/parquet-go/issues/93 
-- Added memory allocation tracking and max memory option to protect against adversarial input: https://github.com/fraugster/parquet-go/pull/87
 - Fixed CHANGELOG for v0.11.0.
+- Fixed bug in `goparquet.recursiveFix` that was overwriting column paths for repeated group elements in a schema definition.
+- Added richer struct tag support for auto-generated schema definitions.
 
 ## [v0.11.0] - 2022-04-21
 
